@@ -1,0 +1,30 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/main.css' %}">
+
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h4 class="my-0 mr-md-auto font-weight-normal "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ДОМАШНИЙ  ПСИХОЛОГ</font></font></h4>
+      <nav class="my-2 my-md-10 mr-md-5 ">
+          <a class="p-3 text-" href="{% url 'glav' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ГЛАВНАЯ</font></font></a>
+          <a class="p-3 text-dark" href="{% url 'elena' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ЕЛЕНА</font></font></a>
+
+      </nav>
+    </div>
+
+    <div class="container">
+        {% block text %}{% endblock %}
+    </div>
+
+</body>
+</html>
