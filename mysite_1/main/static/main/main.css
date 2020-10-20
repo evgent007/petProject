@@ -1,7 +1,14 @@
 body {
-   background: antiquewhite
+   background: blue
    }
 
 h4 {
-   background: antiquewhite
-}
+   background: red
+   }
+
+nav {
+     background: lime
+    }
+div {
+     background: green
+    }
