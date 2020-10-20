@@ -6,7 +6,13 @@
 
 {% block text %}
   <h2>МОЯ ДЕЯТЕЛЬНОСТЬ</h2>
-  <p>ЗАНЯТИЯ</p>
+  {% for el in tasks %}
+    <div class='alert alert-warning mt-2'>
+      <h4>{{ el.title }}</h4>
+      <p  title="задание"> {{ el.task }} </p>
+    </div>
+
+  {% endfor%}
 {% endblock %}
 
 
