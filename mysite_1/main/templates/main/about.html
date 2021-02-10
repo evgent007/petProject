@@ -1,0 +1,15 @@
+
+{% extends 'main/base.html' %}
+
+{% block title %}
+ОБО МНЕ
+{% endblock %}
+
+{% block text %}
+    <h1>ДАВАЙТЕ ПОЗНАКОМИМСЯ</h1>
+    <p>рассказ обо мне</p>
+
+    <!-- включение файла test.html в др страницу -->
+    {% include 'main/test.html' %}
+
+{% endblock %}

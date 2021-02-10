@@ -1,14 +1,44 @@
 body {
-   background: blue
-   }
+   background: #FFE4B5;
+   border: 2px dotted #FF6347;
+ }
+header {
+    border: 2px dashed #7B68EE;
+
+
+}
+.fon1 {
+    background-color: #FFFF00;
+}
 
 h4 {
-   background: red
+
+   background: LIGHTSTEELBLUE;
    }
 
-nav {
-     background: lime
+footer {
+
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    background-color: #3CB371;
+    border: 2px dashed #7B68EE;
+}
+#red {
+     color: CADETBLUE;
+     }
+
+.container{
+    background-color: powderblue;
+    padding-bottom: 1%;
+    padding-right: 50%;
+    margin-bottom: 10px;
+    border: 2px dashed #7B68EE;
+
     }
-div {
-     background: green
-    }
+.foto {
+    background-color: #98FB98;
+    border: 4px double green;
+    padding-bottom: 10%;
+    padding-left: 50px;
+    margin-bottom: 10%;
+}

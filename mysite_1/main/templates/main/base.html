@@ -8,23 +8,37 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'main/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h4 class="my-0 mr-md-auto font-weight-normal "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ДОМАШНИЙ  ПСИХОЛОГ</font></font></h4>
-      <nav class="my-2 my-md-10 mr-md-5 ">
+    <header class="fon1 d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white  shadow-sm">
+        <h4  class="fon1 my-0 mr-md-auto"><a href="{% url 'about'%}">ДОМАШНИЙ  ПСИХОЛОГ</a></h4>
+      <nav class="fon1 my-2 my-md-10 mr-md-5 ">
           <a class="p-3 text-dark" href="{% url 'glav' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ГЛАВНАЯ</font></font></a>
-          <a class="p-3 text-lime" href="{% url 'elena' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ЕЛЕНА</font></font></a>
+          <a class="p-3 text-dark" href="{% url 'elena' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ЕЛЕНА</font></font></a>
+          <a class="p-3 text-dark" href="{% url 'regist' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">РЕГИСТРАЦИЯ</font></font></a>
 
       </nav>
-    </div>
+    </header>
+
 
     <div class="container">
         {% block text %}{% endblock %}
     </div>
+    <footer>
+        <p>ffsdsff</p>
+        <aside>
+            <ul>
+                <a><li></li></a>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </aside>
+    </footer>
 
 </body>
 </html>
